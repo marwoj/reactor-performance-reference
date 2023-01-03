@@ -1,0 +1,17 @@
+### Get activities indexed
+GET localhost:8080/activities/indexed?groupNumber=1
+
+### Get activities non-indexed
+GET localhost:8080/activities/non-indexed?groupNumber=1
+
+### Create activities
+POST localhost:8080/activities
+Content-Type: application/json
+
+{
+  "groupsNumber": 100000,
+  "activitiesInGroup": 10
+}
+
+### Delete all activities
+DELETE localhost:8080/activities
